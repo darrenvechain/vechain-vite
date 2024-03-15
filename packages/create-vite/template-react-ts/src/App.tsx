@@ -1,6 +1,6 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-import { ConnectButtonWithModal, useWallet } from '@vechain/dapp-kit-react'
+import { WalletButton, useWallet } from '@vechain/dapp-kit-react'
 import './App.css'
 import { useCounter } from './hooks/useCounter'
 import { useMemo } from 'react'
@@ -35,7 +35,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <ConnectButtonWithModal />
+        <WalletButton />
         <button disabled={!account} onClick={incrementCount}>
           count is {count}
         </button>
